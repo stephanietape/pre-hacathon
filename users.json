@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ba823187-c8ca-41ce-ac1f-0067e2d2c02b",
+    "nom": "Tape",
+    "prenom": "stephanie",
+    "age": "27",
+    "conatct": "0579895642",
+    "email": "stephanietape04@gmail.com",
+    "competence": "Je suis une informaticienne passionnée par le développement d'applications, avec une expertise spécifique dans la création de solutions logicielles innovantes. Mon travail consiste à concevoir, coder, et tester des applications pour répondre aux besoins des utilisateurs et améliorer leur expérience. Je travaille principalement sur des projets qui ont un impact significatif sur la société, allant de l'amélioration de l'éducation à la facilitation de la communication entre les individus.",
+    "prefession": "informaticienne",
+    "fichier": "test1.pdf",
+    "video": "video1.mp4",
+    "Photo": "fem1.png"
+  },
+  {
+    "id": "f6a83854-d47d-4e52-a571-295bd6c9c4b2",
+    "nom": "Kouakou",
+    "prenom": "makissi",
+    "age": "21",
+    "conatct": "0778443295",
+    "email": "makissi@gmail.com",
+    "competence": "Je suis une passionnée de technologie et de médias sociaux, ayant une expertise en marketing digital et en gestion de communauté. Je travaille pour une entreprise de technologie innovante, où je suis chargée de créer et de maintenir des relations solides avec les utilisateurs et la communauté en ligne. Je suis connue pour ma capacité à comprendre les besoins et les préoccupations de mes utilisateurs, et à les engager de manière significative. Je utilise les médias sociaux, les forums en ligne, et les plateformes de discussion pour répondre aux questions, partager des mises à jour, et encourager l'interaction entre les membres de la communauté. Mon approche centrée sur l'utilisateur et ma capacité à créer un espace sûr et inclusif pour tous ont contribué à faire de mon équipe l'une des plus engagées et fidèles de l'industrie.",
+    "prefession": "commity manager",
+    "fichier": "test2.pdf",
+    "video": "video1.mp4",
+    "Photo": "ladyboss.png"
+  },
+  {
+    "id": "2e7c1341-67b4-4d88-82b2-43baacb2cbf5",
+    "nom": "Obro",
+    "prenom": "Emma",
+    "age": "30",
+    "conatct": "0140881679",
+    "email": "emma@gmail.com",
+    "competence": "Je suis une pionnière dans le domaine de la cybersécurité, spécialisée dans la protection des réseaux et des systèmes informatiques contre les menaces en ligne. Je travaille pour une entreprise de sécurité informatique, où je suis responsable de l'analyse des vulnérabilités, de la mise en place de stratégies de défense, et de la formation des employés sur les meilleures pratiques de sécurité. Je suis reconnue pour mon expertise technique et ma capacité à résoudre des problèmes complexes. Je suis constamment à la recherche des dernières tendances en matière de cybersécurité, afin de protéger mes clients contre les menaces émergentes. Mon engagement envers la sécurité des données et la protection des utilisateurs me distingue comme une leader dans mon domaine.",
+    "prefession": "cyber securité",
+    "fichier": "test2.pdf",
+    "video": "video1.mp4",
+    "Photo": "fem2.png"
+  }
+]

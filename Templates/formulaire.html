@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="../ressources/formulaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">DigiFemmes<span>.</span></a>
+            <ul class="menu-links">
+                <li><a href="/">Acceuil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact-box">
+            <div class="gauche"></div>
+            <div class="droite">
+                <h2>Ajoutez vos Compétences</h2>
+                <form method="POST" action="/enregistrer" enctype="multipart/form-data">
+                    <input type="text" class="field" placeholder="nom" name="nom" required>
+                    <input type="text" class="field" placeholder="Prenoms" name="prenom" required>
+                    <input type="number" class="field" placeholder="age" name="age" required>
+                    <input type="text" class="field" placeholder="Profession" name="profession" required>
+                    <input type="email" class="field" placeholder="Email" name="email" required>
+                    <input type="text" class="field" placeholder="contact" name="contact" required>
+                
+                    <textarea class="field area" placeholder="A propos de moi" name="competence" required></textarea>
+                    <label for="favcolor">Partager un PDF:</label>
+                    <div class="file-upload-wrapper" data-text="uploder vos cours en pdf">
+                        <input name="files" type="file" class="file-upload-field" value="" multiple>
+                    </div>
+                    <label for="favcolor">Partager une video:</label>
+                    <div class="file-upload-wrapper" data-text="uploder votre fichier!">
+                        <input name="video" type="file" class="file-upload-field" value=""  accept="video/*">
+                    </div>
+
+                    <button class="btn">Enregistrer les informations</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+  <!--------------------- footer----------------------------->
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">DigiFemmes .</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+                5535 Abidjan cocody. cote d'ivoire <br>
+
+                <a class="footer__btn" href="digifemes:digifemme@gmail.com">Email</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Liens </h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Acceuil</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                   
+
+                    <li>
+                        <a href="#">GOlang</a>
+                    </li>
+
+                  
+
+                
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Nous Contacter</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">+255 0778443295</a>
+                    </li>
+
+                   
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Faire Par les digiCodeuses.</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> Par les digicodeuse</span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

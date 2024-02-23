@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Verdala';
+    src: url('chemin/vers/verdala.woff2') format('woff2'), /* Format WOFF2 */
+         url('chemin/vers/verdala.woff') format('woff'); /* Format WOFF */
+    /* Ajoute d'autres formats de police si nécessaire */
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+
+}
+
+.navbar{
+    position: absolute;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#DC4657;
+}
+.nav-links ul li a:hover{
+    color: black;
+}
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+    color: #F0F0F0;
+}
+.navbar .nav-links ul{
+    display: flex;
+    margin-right: 30px;
+}
+.navbar .nav-links ul li{
+    margin: 0 30px;
+}
+.navbar a{
+    color: #F0F0F0;
+}
+.navbar .nav-links ul li.active a{
+    color: black;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+}
+.buttons .bouton{
+    color: black;
+}
+.bouton{
+    background-color:#F0F0F0 ;
+    border: 1px solid #DC4657;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Verdala', sans-serif;
+   
+}
+.bouton:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+}
+@media screen and(max-width:900px){
+    
+}
+/*la partie image de la premiere section*/
+.about{
+    width: 100%;
+    border-radius: 20px; /* Arrondi les coins */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+    background-color:rgb(14, 7, 7);
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about img{
+    height: 60%;
+    width: 50%;
+    border-radius: 10px;
+}
+.about-texte {
+    /* Ajoute des marges autour de la div */
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.about-texte  h1{
+    /* Ajoute des marges autour de la div */
+    top: 200px;
+}
+
+.about-texte p {
+    /* Style pour chaque paragraphe */
+    margin-bottom: 10px; /* Espacement entre chaque paragraphe */
+    font-size: 19px; /* Taille de la police */
+    line-height: 1.5; /* Espacement entre les lignes */
+    font-family: 'Verdala', sans-serif; /* Utilise la police Verdala, et utilise une police de secours sans-sérif si Verdala n'est pas disponible */
+    color: rgba(236, 219, 236, 0.8); /* Couleur de texte */
+    width: 100%;
+   
+
+}
+
+.main{
+    position: relative; /* Position relative pour permettre le positionnement absolu des éléments enfants */
+    width: 380px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main img {
+    width: 100%; /* Assure que l'image occupe toute la largeur de son conteneur */
+    display: block; /* Permet de s'assurer que les marges automatiques fonctionnent correctement */
+}
+.text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.8); /* Bleu ciel très léger avec une opacité de 80% */
+    padding: 10px;
+    box-sizing: border-box; /* Assure que le padding est pris en compte dans le calcul de la largeur */
+    color: black; /* Couleur du texte en noir */
+    text-align: center;
+}
+
+.text-container h1,
+.text-container h2 {
+    margin: 5px 0; /* Ajoute un petit espace entre les titres */
+}
+.about-texte h1{
+    color:#F0F0F0;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*les card */
+.service{
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: #DC4657;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #DC4657;
+    border-radius: 20px;
+    margin: 45px;
+    position: relative;
+    overflow:hidden ;
+    text-align: center;
+}
+.card i {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#F0F0F0;
+}
+h5{
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Verdala', sans-serif;
+    margin-bottom: 30px;
+}
+.pra p{
+    color: black;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/*css du conteneur*/
+.section {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(14, 7, 7, 0.9); /* Opacité de 90% */
+  }
+  
+.section .section-tes {
+    color: #DC4657;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .section .section-p {
+    font-size: 19px; /* Taille de la police */
+    line-height: 1.5; /* Espacement entre les lignes */
+    font-family: 'Verdala', sans-serif; /* Utilise la police Verdala, et utilise une police de secours sans-sérif si Verdala n'est pas disponible */
+    color: rgba(236, 219, 236, 0.8); /* Couleur de texte */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color:#F0F0F0 ;
+    background-color:#DC4657 ;
+    border: 1px solid #DC4657;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Verdala', sans-serif;
+  }
+  .btn:hover{
+    background-color: transparent;
+    border: 2px solid #DC4657;
+    cursor: pointer;
+}
+
+/*******************footer******************************/
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #2f2f2f;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }

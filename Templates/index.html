@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../ressources/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-----------------------Menu------------>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">DigiFemmes<span>.</span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+<!-----------------------la banniere avec le bouton pour l'inscription------------>
+    <section class="hero-section">
+        <div class="content">
+            <h2>Compétences Digitales Féminines</h2>
+            <p>
+                Explorez l'excellence féminine dans le digital. Féminines du Digital : Célébrons les compétences,
+                inspirons l'aveni
+            </p>
+            <a href="form">
+                <button>Rejoignez-nous</button>
+            </a>
+        </div>
+    </section>
+    <!-----------------------Les propositions de la plateform --------------------->
+    <section class="body">
+        <div class="wrapper">
+            <div class="wrapper-descrip">
+
+                <h3>Ce que Nous Proposons pour Vous</h3>
+                <div>
+                    <h5>PARTAGE DE COMPETENCE</h5>
+                    <p>
+                        Découvrez et partagez une variété de compétences,<br> des langages de programmation<br> aux techniques de conception,<br> en passant
+                        par la cybersécurité et<br> bien plus encore.
+                    </p>
+                </div>
+                <div>
+                    <h5>RÉSEAUTAGE COLLABORATIF</h5>
+                    <p>
+                        Connectez-vous avec d'autres femmes<br> partageant les mêmes intérêts,<br> explorez des opportunités de <br>collaboration et
+                        élargissez votre <br>réseau professionnel.
+                    </p>
+                </div>
+            </div>
+            <div class="">
+                <div class="wrapper-img" style="width: 80%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------liste des utilisatrices ayant partager leur competences------------>
+    <section class="main" id="main">
+        <h1>Decouvrer les Competences Eclatantes</h1>
+        <div class="contenu">
+
+            {{range .Personnes}}
+
+            <div class="box">
+                <div class="imbox">
+                    <img src="../ressources/{{.Photo}}" alt="">
+                    <div class="text">
+                        <h4 style="text-transform: capitalize;">{{.Nom}} {{.Prenom}}</h4>
+                        <span style="font-style: italic;"> {{.Profession}}</span><br>
+                        <a href="/detail?id={{.Id}}">Afficher plus</a>
+                    </div>
+                </div>
+            </div>
+
+            {{end}}
+
+
+
+        </div>
+        <section class="banniere" id="banniere">
+            <div class="contenue">
+                <a href="form" class="btn1">NOUS REJOINDRE</a>
+            </div>
+
+        </section>
+
+
+    </section>
+    <!--------------------- partie des avis des utilisatrices de la plateform----------------->
+    <section class="section3">
+        <h3 id="tle"> Témoignages Inspirants Des Femmes</h3>
+        <div class="sectiondiv">
+            <div class="bloc">
+                <div class="divimg">
+                    <img src="../ressources/coach.jpg" id="img1" alt="">
+
+                    <span> Claire,45 ans,<br>directrice d'entreprise</span>
+                </div>
+
+                <div class="para">
+                    <p>
+                        En tant que directrice d'entreprise, je cherchais une manière de me familiariser avec les dernières tendances technologiques sans avoir à m'inscrire à des cours dispendieux. Cette application a répondu parfaitement à mes besoins.
+                    </p>
+                </div>
+            </div>
+            <div class="bloc">
+                <div class="divimg">
+                    <img src="../ressources/jolie.jpg" id="img1" alt="">
+
+                    <span> Sophie,28 ans,<br>étudiante en informatique</span>
+                </div>
+
+                <div class="para">
+                    <p>
+                        Cette application a été un véritable atout pour mon parcours d'études. Elle m'a permis de renforcer mes compétences en programmation et en gestion de données de manière autonome.
+                    </p>
+                </div>
+            </div>
+            <div class="bloc">
+                <div class="divimg">
+                    <img src="../ressources/girl4.jpg" id="img1" alt="">
+
+                    <span> Marie,35 ans <br>  enseignante</span>
+                </div>
+
+                <div class="para">
+                    <p>
+                        J'ai découvert cette application il y a quelques mois et je dois dire que c'est un véritable cadeau pour moi et mes élèves. Elle nous a permis de partager des connaissances numériques de manière ludique et efficace. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------- footer--------------------------->
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">DigiFemmes .</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+                5535 Abidjan cocody. cote d'ivoire <br>
+
+                <a class="footer__btn" href="digifemes:digifemme@gmail.com">Email</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Liens </h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Acceuil</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                   
+
+                    <li>
+                        <a href="#">GOlang</a>
+                    </li>
+
+                  
+
+                
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Nous Contacter</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">+255 0778443295</a>
+                    </li>
+
+                   
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Faire Par les digiCodeuses.</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> Par les digicodeuse</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr-FR" style="--inner1Vh: 0.41px;--sbw: 15px;">
+
+<head>
+    <meta charset="utf-8">
+    <title>A propos de </title>
+    <link rel="stylesheet" href="../ressources/stylePropos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">DigiFemmes<span>.</span></a>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="/">Acceuil</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <section class="about">
+        <div class="main">
+            <img src="../ressources/{{.Personne.Photo}}" alt="">
+            <div class="text-container">
+
+                <h1>{{.Personne.Nom}} {{.Personne.Prenom}}</h1>
+                <h2>{{.Personne.Profession}} </h2>
+                <h2>{{.Personne.Contact}}</h2>
+                <h2>{{.Personne.Email}}</h2>
+            </div>
+        </div>
+        <div class="about-texte">
+            <h1>A propos de moi</h1>
+            <p>
+                {{.Personne.Competence}}
+            </p>
+
+        </div>
+    </section>
+    <!--section des competences-->
+    <div class="service">
+        <div class="title">
+            <h2>Ressources</h2>
+        </div>
+
+        <div class="box">
+
+            <div class="card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h5>COURS en PDF</h5>
+                <div class="pra">
+                    <iframe src="/pdf/{{.Personne.Fichier}}" width="100%" height="300px"></iframe>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h5>COURS en video</h5>
+                <div class="pra">
+                    <video width="100%" height="200px" controls>
+                        <source src="/video/{{.Personne.Video}}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <i class="fa-solid fa-earth-africa"></i>
+                <h5>LANGUE</h5>
+                <div class="pra">
+                    <p class="lala">Anglais</p>
+                    <img src="https://img.freepik.com/photos-gratuite/union-jack-flag-background_1048-6002.jpg" alt="la"
+                        style="padding: 10px; width: 30; height: 35px;bottom:30px; ">
+                    <p class="lala">Français</p>
+                    <img src="data:image/jpeg;base64,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"
+                        alt="la" style="padding: 10px; width: 30; height: 35px; ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------ footer ----------------------------------->
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">DigiFemmes .</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+                5535 Abidjan cocody. cote d'ivoire <br>
+
+                <a class="footer__btn" href="digifemes:digifemme@gmail.com">Email</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Liens </h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Acceuil</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+
+
+                    <li>
+                        <a href="#">GOlang</a>
+                    </li>
+
+
+
+
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Nous Contacter</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">+255 0778443295</a>
+                    </li>
+
+
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2024 Faire Par les digiCodeuses.</p>
+
+            <div class="legal__links">
+                <span>Fabriqué avec <span class="heart">♥</span> Par les digicodeuse</span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
